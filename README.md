@@ -1,7 +1,7 @@
 # Pokemon Starters App Description
 Used JavaScript to code an app that allows users to look at starter Pokemons’ stats, different evolutions, and what they sound like. Additionally, background music in the app could be muted using the mute button. 
 
-# screenshots from my app
+# Screenshots from my app
 ![homeScreen](https://github.com/user-attachments/assets/ff9d8d05-9f8c-448d-b8f8-bfc50be7b51f)
 ![screenBulbasaur](https://github.com/user-attachments/assets/0bda18b0-2fb4-465a-8921-4c5b34d65843)
 ![screenCharmander](https://github.com/user-attachments/assets/5c07c65d-ef16-472f-be14-978e0aa37059)
