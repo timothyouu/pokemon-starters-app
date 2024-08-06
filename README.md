@@ -6,3 +6,6 @@ Used JavaScript to code an app that allows users to look at starter Pokemons’ 
 ![screenBulbasaur](https://github.com/user-attachments/assets/0bda18b0-2fb4-465a-8921-4c5b34d65843)
 ![screenCharmander](https://github.com/user-attachments/assets/5c07c65d-ef16-472f-be14-978e0aa37059)
 ![screenSquirtle](https://github.com/user-attachments/assets/d30bb875-65e0-47b0-a2e5-56689beccbdf)
+
+# Credits
+Steven for finding some of the images and helping with some of the code
