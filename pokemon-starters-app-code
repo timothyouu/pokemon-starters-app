@@ -1,0 +1,307 @@
+//For homeScreen
+
+//Music should automatically be playing
+playSound("07-Professor-Oak_s-Laboratory.mp3", true);
+
+//Clicking "symbolAudioUnmuted" should mute the music playing and change icon to "symbolAudioMuted"
+onEvent("symbolAudioUnmuted", "click", function( ) {
+  stopSound("07-Professor-Oak_s-Laboratory.mp3");
+  hideElement("symbolAudioUnmuted");
+  showElement("symbolAudioMuted");
+});
+
+//Clicking "symbolAudioMuted" should play the music and change icon to "symbolAudioUnmuted"
+onEvent("symbolAudioMuted", "click", function( ) {
+  playSound("07-Professor-Oak_s-Laboratory.mp3", true);
+  hideElement("symbolAudioMuted");
+  showElement("symbolAudioUnmuted");
+});
+
+// Clicking "imageSelectBulbasaur" takes user to screenBulbasaur and plays Bulbasaur sound
+onEvent("imageSelectBulbasaur", "click", function( ) {
+  setScreen("screenBulbasaur");
+  playSound("001-bulbasaur.mp3", false);
+});
+
+// Clicking "imageSelectCharmander" takes user to screenCharmander and plays Charmander sound
+onEvent("imageSelectCharmander", "click", function( ) {
+  setScreen("screenCharmander");
+  playSound("004-charmander.mp3", false);
+});
+
+// Clicking "imageSelectSquirtle" takes user to screenSquirtle and plays Squirtle sound
+onEvent("imageSelectSquirtle", "click", function( ) {
+  setScreen("screenSquirtle");
+  playSound("007-squirtle.mp3", false);
+});
+
+// Clicking "textBulbasaur" takes user to screenBulbasaur and plays Bulbasaur sound
+onEvent("textBulbasaur", "click", function( ) {
+  setScreen("screenBulbasaur");
+  playSound("001-bulbasaur.mp3", false);
+});
+
+// Clicking "textCharmander" takes user to screenCharmander and plays Charmander sound
+onEvent("textCharmander", "click", function( ) {
+  setScreen("screenCharmander");
+  playSound("004-charmander.mp3", false);
+});
+
+// Clicking "textSquirtle" takes user to screenSquirtle and plays Squirtle sound
+onEvent("textSquirtle", "click", function( ) {
+  setScreen("screenSquirtle");
+  playSound("007-squirtle.mp3", false);
+});
+
+// Clicking on imagePokeBallHome takes user to homeScreen and plays pokeball catch audio
+onEvent("imagePokeBallHome", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+// Clicking on labelHome takes user to homeScreen and plays pokeball catch audio
+onEvent("labelHome", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+
+//For screenBulbasaur
+// Clicking on imagePokeBallBulbasaur takes user to homeScreen and plays pokeball catch audio
+onEvent("imagePokeBallBulbasaur", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+// Clicking on homeBulbasaur takes user to homeScreen and plays pokeball catch audio
+onEvent("bulbasaurHome", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+//Clicking on imageBulbasaur plays it's cry
+onEvent("imageBulbasaur", "click", function( ) {
+  playSound("001-bulbasaur.mp3", false);
+});
+
+//Clicking on imageShinyBulbasaur plays it's cry
+onEvent("imageShinyBulbasaur", "click", function( ) {
+  playSound("001-bulbasaur.mp3", false);
+});
+
+//Clicking on imageIvysaur plays it's cry
+onEvent("imageIvysaur", "click", function( ) {
+  playSound("002---Kanto---Ivysaur.mp3", false);
+});
+
+//Clicking on imageShinyIvysaur plays it's cry
+onEvent("imageShinyIvysaur", "click", function( ) {
+  playSound("002---Kanto---Ivysaur.mp3", false);
+});
+
+//Clicking on imageVenusaur plays it's cry
+onEvent("imageVenusaur", "click", function( ) {
+  playSound("003---Kanto---Venusaur.mp3", false);
+});
+
+//Clicking on imageMegaVenusaur plays it's cry
+onEvent("imageMegaVenusaur", "click", function( ) {
+  playSound("3-mega.mp3", false);
+});
+
+//Clicking on imageGmaxVenusaur plays it's cry
+onEvent("imageGmaxVenusaur", "click", function( ) {
+  playSound("onlymp3.to_-_Gigantamax_Venusaur_Cry-yQdpRKqbN5Q-192k-1696385875.mp3", false);
+});
+
+//Clicking on imageShinyVenusaur plays it's cry
+onEvent("imageShinyVenusaur", "click", function( ) {
+  playSound("003---Kanto---Venusaur.mp3", false);
+});
+
+//For screenCharmander
+// Clicking on imagePokeBallCharmander takes user to homeScreen and plays pokeball catch audio
+onEvent("imagePokeBallCharmander", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+// Clicking on homeCharmander takes user to homeScreen and plays pokeball catch audio
+onEvent("charmanderHome", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+//Clicking on imageCharmander plays it's cry
+onEvent("imageCharmander", "click", function( ) {
+  playSound("004-charmander.mp3", false);
+});
+
+//Clicking on imageShinyCharmander plays it's cry
+onEvent("imageShinyCharmander", "click", function( ) {
+  playSound("004-charmander.mp3", false);
+});
+
+//Clicking on imageCharmeleon plays it's cry
+onEvent("imageCharmeleon", "click", function( ) {
+  playSound("005---Kanto---Charmeleon.mp3", false);
+});
+
+//Clicking on imageShinyCharmeleon plays it's cry
+onEvent("imageShinyCharmeleon", "click", function( ) {
+  playSound("005---Kanto---Charmeleon.mp3", false);
+});
+
+//Clicking on imageCharizard plays it's cry
+onEvent("imageCharizard", "click", function( ) {
+  playSound("006---Kanto---Charizard.mp3", false);
+});
+
+//Clicking on imageShinyCharizard plays it's cry
+onEvent("imageShinyCharizard", "click", function( ) {
+  playSound("006---Kanto---Charizard.mp3", false);
+});
+
+//Clicking on imageMegaCharizardX plays it's cry
+onEvent("imageMegaCharizardX", "click", function( ) {
+  playSound("6-mega-x.mp3", false);
+});
+
+//Clicking on imageMegaCharizardY plays it's cry
+onEvent("imageMegaCharizardY", "click", function( ) {
+  playSound("6-mega-y.mp3", false);
+});
+
+//Clicking on imageGmaxCharizard plays it's cry
+onEvent("imageGmaxCharizard", "click", function( ) {
+  playSound("onlymp3.to---gigantimax_charizard_cry-QclDovK12bQ-192k-1696385710.mp3", false);
+});
+
+//For screenSquirtle
+// Clicking on imagePokeBallSquirtle takes user to homeScreen and plays pokeball catch audio
+onEvent("imagePokeBallSquirtle", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+// Clicking on homeSquirtle takes user to homeScreen and plays pokeball catch audio
+onEvent("squirtleHome", "click", function( ) {
+  setScreen("homeScreen");
+  playSound("pokeball_sound_effects_mp3cut_3.mp3", false);
+});
+
+//Clicking imageSquirtle plays it's cry
+onEvent("imageSquirtle", "click", function( ) {
+  playSound("007-squirtle.mp3", false);
+});
+
+//Clicking imageShinySquirtle plays it's cry
+onEvent("imageShinySquirtle", "click", function( ) {
+  playSound("007-squirtle.mp3", false);
+});
+
+//Clicking imageWartortle plays it's cry
+onEvent("imageWartortle", "click", function( ) {
+  playSound("008_-_Kanto_-_Wartortle.mp3", false);
+});
+
+//Clicking imageShinyWartortle plays it's cry
+onEvent("imageShinyWartortle", "click", function( ) {
+  playSound("008_-_Kanto_-_Wartortle.mp3", false);
+});
+
+//Clicking imageBlastoise plays it's cry
+onEvent("imageBlastoise", "click", function( ) {
+  playSound("009_-_Kanto_-_Blastoise.mp3", false);
+});
+
+//Clicking imageShinyBlastoise plays it's cry
+onEvent("imageShinyBlastoise", "click", function( ) {
+  playSound("009_-_Kanto_-_Blastoise.mp3", false);
+});
+
+//Clicking imageMegaBlastoise plays it's cry
+onEvent("imageMegaBlastoise", "click", function( ) {
+  playSound("9-mega-(1).mp3", false);
+});
+
+//Clicking imageGmaxBlastoise plays it's cry
+onEvent("imageGmaxBlastoise", "click", function( ) {
+  playSound("onlymp3.to---Gigantamax-Blastoise-Cry-da0G96QeObU-192k-1696385928.mp3", false);
+});
+
+//Credits:
+
+//Homescreen: 
+//Bulbasaur Image: https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pokémon)
+//Charmander Image: https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pokémon)
+//Squirtle Image: https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)
+//Pokeball Image: https://en.m.wikipedia.org/wiki/File:Poké_Ball_icon.svg
+//Pokeball Audio: https://www.myinstants.com/en/instant/pokeball-catch/
+//Bulbasaur Audio: https://www.myinstants.com/en/instant/pokemon-bulbasaur-cry-37900/
+//Charmander Audio: https://www.myinstants.com/en/instant/pokemon-charmander-cry-85610/
+//Squirtle Audio: https://www.myinstants.com/en/instant/pokemon-squirtle-cry-70449/
+//Background Music:https://downloads.khinsider.com/game-soundtracks/album/pokemon-let-s-go-pikachu-and-let-s-go-eevee/07%2520Professor%2520Oak%2527s%2520Laboratory.mp3
+
+
+//screenBulbasaur
+//Bulbasaur Image: https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pokémon)
+//Ivysaur Image:https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pokémon)
+//Venusaur Image:https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pokémon)
+//Shiny Bulbasaur Image: https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pokémon)
+//Shiny Ivysaur Image: https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pokémon)
+//Shiny Venusaur Image: https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pokémon)
+//Mega Venusaur Image:https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pokémon)
+//G-Max Venusaur Image:https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pokémon)
+//Pokeball Image: https://en.m.wikipedia.org/wiki/File:Poké_Ball_icon.svg
+//Pokeball Audio: https://www.myinstants.com/en/instant/pokeball-catch/
+//Bulbasaur Cry: https://www.myinstants.com/en/instant/pokemon-bulbasaur-cry-37900/
+//Shiny Bulbasaur Cry: https://www.myinstants.com/en/instant/pokemon-bulbasaur-cry-37900/
+//Ivysaur Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/002%2520-%2520Kanto%2520-%2520Ivysaur.mp3
+//Shiny Ivysaur Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/002%2520-%2520Kanto%2520-%2520Ivysaur.mp3
+//Venusaur Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/003%2520-%2520Kanto%2520-%2520Venusaur.mp3
+//Shiny Venusaur Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/003%2520-%2520Kanto%2520-%2520Venusaur.mp3
+//Mega Venusaur Cry: https://veekun.com/dex/downloads
+//Gmax Venusaur Cry: https://www.youtube.com/shorts/yQdpRKqbN5Q (Converted into Mp3)
+
+//screenCharmander
+//Charmander Image: https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pokémon)
+//Charmeleon Image: https://bulbapedia.bulbagarden.net/wiki/Charmeleon_(Pokémon)
+//Charizard Image: https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)
+//Shiny Charmander Image: https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pokémon)
+//Shiny Charmeleon Image:https://bulbapedia.bulbagarden.net/wiki/Charmeleon_(Pokémon)
+//Shiny Charizard Image:https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)
+//Mega Charizard X Image: https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)
+//Mega Charizard Y Image: https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)
+//G-Max Charizard Image: https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)
+//Pokeball Image: https://en.m.wikipedia.org/wiki/File:Poké_Ball_icon.svg
+//Pokeball Audio: https://www.myinstants.com/en/instant/pokeball-catch/
+//Charmander Cry: https://www.myinstants.com/en/instant/pokemon-charmander-cry-85610/
+//Shiny Charmander Cry: https://www.myinstants.com/en/instant/pokemon-charmander-cry-85610/
+//Charmeleon Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/005%2520-%2520Kanto%2520-%2520Charmeleon.mp3
+//Shiny Charmeleon Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/005%2520-%2520Kanto%2520-%2520Charmeleon.mp3
+//Charizard Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/006%2520-%2520Kanto%2520-%2520Charizard.mp3
+//Shiny Charizard Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/006%2520-%2520Kanto%2520-%2520Charizard.mp3
+//Mega Charizard X Cry: https://veekun.com/dex/downloads
+//Mega Charizard Y Cry: https://veekun.com/dex/downloads
+//Gmax Charizard Cry: https://www.youtube.com/watch?v=QclDovK12bQ (Converted into Mp3)
+
+//screenSquirtle
+//Squirtle Image: https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)
+//Wartortle Image:https://bulbapedia.bulbagarden.net/wiki/Wartortle_(Pokémon)
+//Blastoise Image:https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)
+//Shiny Squirtle Image: https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)
+//Shiny Wartortle Image:https://bulbapedia.bulbagarden.net/wiki/Wartortle_(Pokémon)
+//Shiny Blastoise Image:https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)
+//Mega Blastoise Image:https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)
+//G-Max Blastoise Image:https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pokémon)
+//Pokeball Image: https://en.m.wikipedia.org/wiki/File:Poké_Ball_icon.svg
+//Pokeball Audio: https://www.myinstants.com/en/instant/pokeball-catch/
+//Squirtle Cry: https://www.myinstants.com/en/instant/pokemon-squirtle-cry-70449/
+//Shiny Squirtle Cry: https://www.myinstants.com/en/instant/pokemon-squirtle-cry-70449/
+//Wartortle Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/008%2520-%2520Kanto%2520-%2520Wartortle.mp3
+//Shiny Wartortle Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/008%2520-%2520Kanto%2520-%2520Wartortle.mp3
+//Blastoise Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/009%2520-%2520Kanto%2520-%2520Blastoise.mp3
+//Shiny Blastoise Cry: https://downloads.khinsider.com/game-soundtracks/album/pokemon-x-y-cries/009%2520-%2520Kanto%2520-%2520Blastoise.mp3
+//Mega Blastoise Cry: https://veekun.com/dex/downloads
+//Gmax Blastoise Cry: https://www.youtube.com/shorts/da0G96QeObU (Converted into Mp3)
